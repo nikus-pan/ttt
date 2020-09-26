@@ -5,6 +5,8 @@ face_cascade = cv2.CascadeClassifier('./cascades/haarcascade_frontalface_default
 # 讀取圖片
 img = cv2.imread('a.jpg')
 # 轉成灰階圖片
+
+
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # 偵測臉部
 faces = face_cascade.detectMultiScale(
